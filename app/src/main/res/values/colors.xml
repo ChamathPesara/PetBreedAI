@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand colors -->
+    <color name="primaryBlue">#1A56DB</color>
+    <color name="primaryBlueDark">#0A3A9E</color>
+    <color name="teal">#5DEEDD</color>
+    <color name="tealDark">#0D6B5E</color>
+
+    <!-- Background -->
+    <color name="bgLight">#EEF2F8</color>
+    <color name="bgWhite">#FFFFFF</color>
+    <color name="bgDark">#1A2340</color>
+
+    <!-- Text colors -->
+    <color name="textPrimary">#0A1628</color>
+    <color name="textSecondary">#4A5568</color>
+    <color name="textMuted">#8A9BB0</color>
+    <color name="textDark">#2D3748</color>
+
+    <!-- Accent -->
+    <color name="amber">#C97A20</color>
+    <color name="amberLight">#FDEBD0</color>
+    <color name="amberDark">#7B4000</color>
+
+    <!-- Nav / bottom bar -->
+    <color name="navActive">#1A56DB</color>
+    <color name="navInactive">#8A9BB0</color>
+
+    <!-- Confidence bar -->
+    <color name="progressStart">#1A56DB</color>
+    <color name="progressEnd">#7DEEDD</color>
+
+</resources>

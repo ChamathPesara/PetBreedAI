@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2F8">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEF2F8"
+        android:layout_marginTop="10dp"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#EEF2F8"
+            app:elevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_paw"
+                    app:tint="#1A56DB" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PetBreedAI"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#0A1628"
+                    android:fontFamily="@font/alexandria_semibold"
+                    android:layout_marginStart="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnLogOut"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_close"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Log Out"
+                    app:tint="#1A56DB" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="100dp">
+
+            <!-- Hero Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Digital"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="#0A1628"
+                android:fontFamily="@font/alexandria_semibold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Companion"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="#1A56DB"
+                android:fontFamily="@font/alexandria_semibold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harnessing the power of Deep Learning to identify your furry friends with professional accuracy."
+                android:textSize="14sp"
+                android:textColor="#4A5568"
+                android:fontFamily="@font/alexandria"
+                android:layout_marginTop="10dp" />
+
+            <!-- Core Architecture Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_marginTop="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CORE ARCHITECTURE"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:textColor="#4A5568"
+                        android:fontFamily="@font/alexandria_semibold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MobileNetV2"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="#0A1628"
+                        android:fontFamily="@font/alexandria_semibold"
+                        android:layout_marginTop="6dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Optimized CNN architecture for lightning-fast inference on mobile devices."
+                        android:textSize="14sp"
+                        android:textColor="#4A5568"
+                        android:fontFamily="@font/alexandria"
+                        android:layout_marginTop="6dp" />
+
+                    <!-- Two sub-cards row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <!-- Oxford-IIIT Card -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="#7DEEDD"
+                            android:layout_marginEnd="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="14dp">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/ic_database"
+                                    app:tint="#0D6B5E" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Oxford-IIIT"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#0D1F1C"
+                                    android:fontFamily="@font/alexandria_semibold"
+                                    android:layout_marginTop="6dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="37 breed dataset for precise classification."
+                                    android:textSize="11sp"
+                                    android:textColor="#0D4038"
+                                    android:fontFamily="@font/alexandria" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Fast Inference Card -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="#FFFFFF">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="14dp">
+
+                                <ImageView
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/ic_speed"
+                                    app:tint="#C97A20" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fast Inference"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#0A1628"
+                                    android:fontFamily="@font/alexandria_semibold"
+                                    android:layout_marginTop="6dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Results in under 100ms."
+                                    android:textSize="11sp"
+                                    android:textColor="#4A5568"
+                                    android:fontFamily="@font/alexandria" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Key Features Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Features"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0A1628"
+                android:fontFamily="@font/alexandria_semibold"
+                android:layout_marginTop="24dp" />
+
+            <!-- Feature: AI Classification -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_feature_item"
+                android:padding="16dp"
+                android:layout_marginTop="12dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#EEF2F8"
+                    android:layout_marginEnd="14dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_sparkle"
+                        app:tint="#1A56DB" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AI Classification"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#0A1628"
+                        android:fontFamily="@font/alexandria_semibold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State-of-the-art visual recognition."
+                        android:textSize="13sp"
+                        android:textColor="#4A5568"
+                        android:fontFamily="@font/alexandria" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Feature: Camera & Gallery -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_feature_item"
+                android:padding="16dp"
+                android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#EEF2F8"
+                    android:layout_marginEnd="14dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_image"
+                        app:tint="#1A56DB" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camera &amp; Gallery"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#0A1628"
+                        android:fontFamily="@font/alexandria_semibold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan live or upload from your library."
+                        android:textSize="13sp"
+                        android:textColor="#4A5568"
+                        android:fontFamily="@font/alexandria" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Feature: Offline Mode -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_feature_item"
+                android:padding="16dp"
+                android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#EEF2F8"
+                    android:layout_marginEnd="14dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_wifi_off"
+                        app:tint="#1A56DB" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offline Mode"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#0A1628"
+                        android:fontFamily="@font/alexandria_semibold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Classify breeds anywhere, no internet needed."
+                        android:textSize="13sp"
+                        android:textColor="#4A5568"
+                        android:fontFamily="@font/alexandria" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Developer Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#1A2340"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Development"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/alexandria_semibold" />
+
+                    <!-- Developer info row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="16dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            app:cardCornerRadius="26dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="#2A3550"
+                            android:layout_marginEnd="14dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_developer_avatar"
+                                android:scaleType="centerCrop" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvDeveloperName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chamath Pesara"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:fontFamily="@font/alexandria_semibold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AI | App Development Enthusiat"
+                                android:textSize="12sp"
+                                android:textColor="#8A9BB0"
+                                android:fontFamily="@font/alexandria" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- View GitHub Button -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnGitHub"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#1A56DB"
+                        android:layout_marginTop="16dp"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/ic_code"
+                                android:layout_marginEnd="8dp"
+                                app:tint="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View GitHub Repository"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:fontFamily="@font/alexandria_semibold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Version + copyright -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="VERSION 2.4.0"
+                            android:textSize="10sp"
+                            android:textColor="#5A6880"
+                            android:letterSpacing="0.06"
+                            android:fontFamily="@font/alexandria" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="© 2024 PETBREEDAI"
+                            android:textSize="10sp"
+                            android:textColor="#5A6880"
+                            android:letterSpacing="0.06"
+                            android:fontFamily="@font/alexandria" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:labelVisibilityMode="labeled" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
