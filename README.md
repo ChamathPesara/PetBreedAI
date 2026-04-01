@@ -142,27 +142,27 @@ Your Photo
        ▼
   Top 3 Results + Tips + History Save ✅
 ```
-##📱 Screenshots
+## 📱 Screenshots
 
-#1. Splash Screen
+1. Splash Screen <br/>
 <img width="220" alt="splash_screen" src="https://github.com/user-attachments/assets/b7e26bda-7642-447e-a496-c8ab8e1089e0" /><br/>
 
-#2. Home Screen
+2. Home Screen
 <img width="220" alt="home_1" src="https://github.com/user-attachments/assets/90ce98cc-a065-4bb6-858f-b13c394379ce" />
 <img width="220" alt="home_2" src="https://github.com/user-attachments/assets/08136977-fed5-4540-8d8f-f3a3778b74f6" /><br/>
 
-#3. Analyze Screen
+3. Analyze Screen
 <img width="220" alt="analyze_1" src="https://github.com/user-attachments/assets/71b86ae0-6b31-4755-ba57-7f05adc1bfb9" />
 <img width="220" alt="analyze_2" src="https://github.com/user-attachments/assets/a5b7089e-9362-46a3-b98f-80aacd4497cf" /><br/>
 
-#4. Results Screen
+4. Results Screen
 <img width="220" alt="results_1" src="https://github.com/user-attachments/assets/2c988366-eb65-41fa-8927-e70a60189f4a" />
 <img width="220" alt="results_2" src="https://github.com/user-attachments/assets/13f6e213-ad9c-4d9b-b122-e1ff90d2c85b" /><br/>
 
-#5. History Screen
+5. History Screen
 <img width="220" alt="history" src="https://github.com/user-attachments/assets/12b18af7-6b41-4fa5-b61f-a4725f310472" /><br/>
 
-#6. About Screen
+6. About Screen
 <img width="220" alt="about" src="https://github.com/user-attachments/assets/96e1fd6e-51c0-445e-98a7-e739655a5165" />
 <img width="220" alt="about_2" src="https://github.com/user-attachments/assets/ade45a3c-0093-465a-b1ab-007e8d331cce" /><br/>
 
