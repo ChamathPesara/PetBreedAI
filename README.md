@@ -144,7 +144,7 @@ Your Photo
 ```
 ## 📱 Screenshots
 
-1. Splash Screen <br/>
+1. Splash Screen <br/><br/>
 <img width="220" alt="splash_screen" src="https://github.com/user-attachments/assets/b7e26bda-7642-447e-a496-c8ab8e1089e0" /><br/>
 
 2. Home Screen 
@@ -159,7 +159,7 @@ Your Photo
 <img width="220" alt="results_1" src="https://github.com/user-attachments/assets/2c988366-eb65-41fa-8927-e70a60189f4a" />
 <img width="220" alt="results_2" src="https://github.com/user-attachments/assets/13f6e213-ad9c-4d9b-b122-e1ff90d2c85b" /><br/><br/>
 
-5. History Screen <br/>
+5. History Screen <br/><br/>
 <img width="220" alt="history" src="https://github.com/user-attachments/assets/12b18af7-6b41-4fa5-b61f-a4725f310472" /><br/><br/>
 
 6. About Screen
